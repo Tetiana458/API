@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "7d46e859-1cf7-4dab-a5ff-405b93867558",
+		"name": "Tech Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24889634"
+	},
+	"item": [
+		{
+			"name": "Create useer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 999,\r\n  \"username\": \"Tetiana458\",\r\n  \"firstName\": \"Tetiana\",\r\n  \"lastName\": \"Xxx\",\r\n  \"email\": \"4583968@gmail.com\",\r\n  \"password\": \"999\",\r\n  \"phone\": \"999\",\r\n  \"userStatus\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 999,\r\n  \"username\": \"Tetiana458\",\r\n  \"firstName\": \"Tetiana Tetiana\",\r\n  \"lastName\": \"Xxx\",\r\n  \"email\": \"4583968@gmail.com\",\r\n  \"password\": \"999\",\r\n  \"phone\": \"999\",\r\n  \"userStatus\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/Tetiana458",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"Tetiana458"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by user name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 999,\r\n  \"username\": \"Tetiana458\",\r\n  \"firstName\": \"Tetiana Tetiana\",\r\n  \"lastName\": \"Xxx\",\r\n  \"email\": \"4583968@gmail.com\",\r\n  \"password\": \"999\",\r\n  \"phone\": \"999\",\r\n  \"userStatus\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/Tetiana458",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"Tetiana458"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/Tetiana458",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"Tetiana458"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
